@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ********************** */
+/* utility class for flex */
+/* ********************** */
+
+.flex {
+    display: flex;
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-as-c {
+        align-self: center;
+    }
+}
+
+/* ************************************ */
+/* utility class for margin and padding */
+/* ************************************ */
+
+.mt {
+    margin-top: var(--mt, 2em);
+}
+.ml {
+    margin-left: var(--ml, 2em);
+}
+.mb {
+    margin-bottom: var(--mb, 2em);
+}
+.mr {
+    margin-right: var(--mr, 2em);
+}
+
+.pd {
+    padding: 1em;
+}
+
+/* ************* */
+/* class to hide */
+/* ************* */
+
+.hide {
+    display: none;
+}

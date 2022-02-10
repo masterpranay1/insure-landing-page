@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+:root {
+  /* *************** */
+  /* color variables */
+  /* *************** */
+  --clr-pri-1: hsl(256, 26%, 20%);
+  --clr-pri-2: hsl(216, 30%, 68%);
+  --clr-sec-1: hsl(270, 9%, 17%);
+  --clr-sec-2: hsl(273, 4%, 51%);
+  --clr-text: hsl(0, 0%, 98%);
+  /* *************************** */
+  /* font family and font weight */
+  /* *************************** */
+  --ff-heading: 'DM Serif Display', serif;
+  --ff-body: 'Karla', sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* ************************** */
+/* utility classes for colors */
+/* ************************** */
+.clr-pri-1-bg {
+  background: var(--clr-pri-1);
+}
+
+.clr-pri-1-c {
+  color: var(--clr-pri-1);
+}
+
+.clr-pri-2-bg {
+  background: var(--clr-pri-2);
+}
+
+.clr-pri-2-c {
+  color: var(--clr-pri-2);
+}
+
+.clr-sec-1-bg {
+  background: var(--clr-sec-1);
+}
+
+.clr-sec-1-c {
+  color: var(--clr-sec-1);
+}
+
+.clr-sec-2-bg {
+  background: var(--clr-sec-2);
+}
+
+.clr-sec-2-c {
+  color: var(--clr-sec-2);
+}
+
+.clr-text-bg {
+  background: var(--clr-text);
+}
+
+.clr-text-c {
+  color: var(--clr-text);
+}
+
+/* ************************************************ */
+/* utility classses for font family and font weight */
+/* ************************************************ */
+.ff-heading {
+  font-family: var(--ff-heading);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ********************** */
+/* utility class for flex */
+/* ********************** */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-as-c {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/* ************************************ */
+/* utility class for margin and padding */
+/* ************************************ */
+.mt {
+  margin-top: var(--mt, 2em);
+}
+
+.ml {
+  margin-left: var(--ml, 2em);
+}
+
+.mb {
+  margin-bottom: var(--mb, 2em);
+}
+
+.mr {
+  margin-right: var(--mr, 2em);
+}
+
+.pd {
+  padding: 1em;
+}
+
+/* ************* */
+/* class to hide */
+/* ************* */
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
