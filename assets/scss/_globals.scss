@@ -16,12 +16,22 @@ body {
     min-height: 100vh;
 }
 
+li {
+    list-style: none;
+}
+
 /* ********************** */
 /* utility class for flex */
 /* ********************** */
 
 .flex {
     display: flex;
+    &-dir-row {
+        flex-direction: row;
+    }
+    &-dir-col {
+        flex-direction: column;
+    }
     &-jc-c {
         justify-content: center;
     }
@@ -60,4 +70,14 @@ body {
 
 .hide {
     display: none;
+}
+
+/* ******************************* */
+/* global style of button and link */
+/* ******************************* */
+
+button, .button {
+    background: none;
+    border: none;
+    outline: none;
 }

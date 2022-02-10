@@ -9,7 +9,10 @@
     --clr-pri-2: hsl(216, 30%, 68%);
     --clr-sec-1: hsl(270, 9%, 17%);
     --clr-sec-2: hsl(273, 4%, 51%);
-    --clr-text : hsl(0, 0%, 98%);
+    --clr-ter : hsl(0, 0%, 98%);
+
+    --clr-black : black;
+    --clr-white : white;
 
     /* *************************** */
     /* font family and font weight */
@@ -20,6 +23,44 @@
     --fw-400 : 400;
     --fw-700 : 700;
 
+    /* ********** */
+    /* font sizes */
+    /* ********** */
+    --fs-xl : 2.2em;
+    --fs-l : 1.7em;
+    --fs-m : 1.5em;
+    --fs-s : 1.2em;
+    --fs-xs : 1em;
+}
+
+@include breakpoint-down(desktop) {
+    :root {
+        --fs-xl : 2.1em;
+        --fs-l : 1.6em;
+        --fs-m : 1.4em;
+        --fs-s : 1.1em;
+        --fs-xs : 0.9em;
+    }
+}
+
+/* **************************** */
+/* utility class for font sizes */
+/* **************************** */
+
+.fs-xl {
+    font-size: var(--fs-xl);
+}
+.fs-l {
+    font-size: var(--fs-l);
+}
+.fs-m {
+    font-size: var(--fs-m);
+}
+.fs-s {
+    font-size: var(--fs-s);
+}
+.fs-xs {
+    font-size: var(--fs-xs);
 }
 
 /* ************************** */
@@ -50,11 +91,23 @@
 .clr-sec-2-c {
     color : var(--clr-sec-2);
 }
-.clr-text-bg {
-    background: var(--clr-text);
+.clr-ter-bg {
+    background: var(--clr-ter);
 }
-.clr-text-c {
-    color: var(--clr-text);
+.clr-ter-c {
+    color: var(--clr-ter);
+}
+.clr-black-bg {
+    background: var(--clr-black);
+}
+.clr-black-c {
+    color: var(--clr-black);
+}
+.clr-white-bg {
+    background: var(--clr-white);
+}
+.clr-white-c {
+    color: var(--clr-white);
 }
 
 /* ************************************************ */
