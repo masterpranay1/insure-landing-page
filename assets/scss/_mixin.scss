@@ -25,3 +25,20 @@ $breakpoints-down : (
         @content;
     }
 }
+
+@mixin button-1 {
+    background: var(--clr-white);
+    color: var(--clr-sec-1);
+    font-weight: 700;
+    padding: 0.8em 1.6em;
+    height: fit-content;
+
+    font-size: 0.9em;
+    border: 2px solid var(--clr-pri-1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover {
+      background: var(--clr-sec-1);
+      color: var(--clr-white);
+    }
+}

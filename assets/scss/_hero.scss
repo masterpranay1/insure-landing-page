@@ -1,0 +1,99 @@
+section.hero {
+    height: fit-content;
+    width: 100%;
+
+    background: var(--clr-pri-1);
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 6em 6em;
+
+    div.hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        color: var(--clr-white);
+
+        width: 50%;
+        hr {
+            width: 18ch;
+        }
+        h2 {
+            font-size: calc(var(--fs-xl) + 1.5em);
+            font-family: var(--ff-heading);
+
+            line-height: 1;
+            letter-spacing: 2px;
+
+            margin-top: var(--fs-s);
+            margin-bottom: 0.5em;
+
+            width: 80%;
+        }
+        p {
+            line-height: 1.5;
+            font-size: var(--fs-s);
+            width: 94%;
+        }
+        button {
+            width: fit-content;
+            padding: 0.8em 2em;
+            margin-top: 2em;
+
+            font-size: var(--fs-s);
+            color: var(--clr-white);
+            
+            border: 2px solid var(--clr-white);
+
+            cursor: pointer;
+            &:hover {
+                background: var(--clr-white);
+                color : var(--clr-pri-1);
+            }
+        }
+    }
+    div.image-wrapper {
+        width: 50%;
+        position: relative;
+        img {
+            width: 80%;
+            margin-top: 5%;
+            position: absolute;
+        }
+    }
+    @include breakpoint-down(desktop) {
+        padding: 4em 6em;
+        div.image-wrapper img {
+            width: 100%;
+            position: relative;
+            margin-top: 0;
+        }
+    }
+    @include breakpoint-down(tablet) {
+        padding: 0;
+        flex-direction: column-reverse;
+        div.hero-text {
+            width: 100%;
+            padding: 2em 2em;
+            padding-bottom: 4em;
+            text-align: center;
+            h2, p {
+                width: 100%;
+            }
+            h2 {
+                margin-top: 0.5em;
+            }
+            button {
+                align-self: center;
+            }
+            hr {
+                display: none;
+            }
+        }
+        div.image-wrapper {
+            width: 100%;
+        }
+    }
+}

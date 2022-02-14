@@ -155,6 +155,7 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+  margin-bottom: 20em;
 }
 
 li {
@@ -303,17 +304,6 @@ header nav button:hover {
   header nav {
     display: none;
   }
-  header #hamburger {
-    display: block;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-left: auto;
-    cursor: pointer;
-  }
 }
 
 @media (max-width: 31.25em) {
@@ -323,6 +313,7 @@ header nav button:hover {
 }
 
 nav.mobile {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +323,7 @@ nav.mobile {
           flex-direction: column;
   width: 100%;
   height: calc(100vh - var(--fs-xl));
-  position: fixed;
+  position: absolute;
   padding: 1em;
   background: var(--clr-sec-1);
   color: var(--clr-white);
@@ -366,5 +357,152 @@ nav.mobile button {
 
 nav.mobile.hide {
   display: none;
+}
+
+.hamburger,
+.icon-close {
+  display: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.hamburger.hide, .icon-close.hide {
+  display: none;
+}
+
+@media (max-width: 47.9375em) {
+  .hamburger,
+  .icon-close {
+    display: block;
+  }
+}
+
+section.hero {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background: var(--clr-pri-1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 6em 6em;
+}
+
+section.hero div.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--clr-white);
+  width: 50%;
+}
+
+section.hero div.hero-text hr {
+  width: 18ch;
+}
+
+section.hero div.hero-text h2 {
+  font-size: calc(var(--fs-xl) + 1.5em);
+  font-family: var(--ff-heading);
+  line-height: 1;
+  letter-spacing: 2px;
+  margin-top: var(--fs-s);
+  margin-bottom: 0.5em;
+  width: 80%;
+}
+
+section.hero div.hero-text p {
+  line-height: 1.5;
+  font-size: var(--fs-s);
+  width: 94%;
+}
+
+section.hero div.hero-text button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8em 2em;
+  margin-top: 2em;
+  font-size: var(--fs-s);
+  color: var(--clr-white);
+  border: 2px solid var(--clr-white);
+  cursor: pointer;
+}
+
+section.hero div.hero-text button:hover {
+  background: var(--clr-white);
+  color: var(--clr-pri-1);
+}
+
+section.hero div.image-wrapper {
+  width: 50%;
+  position: relative;
+}
+
+section.hero div.image-wrapper img {
+  width: 80%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+@media (max-width: 63.9375em) {
+  section.hero {
+    padding: 4em 6em;
+  }
+  section.hero div.image-wrapper img {
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  section.hero {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.hero div.hero-text {
+    width: 100%;
+    padding: 2em 2em;
+    padding-bottom: 4em;
+    text-align: center;
+  }
+  section.hero div.hero-text h2, section.hero div.hero-text p {
+    width: 100%;
+  }
+  section.hero div.hero-text h2 {
+    margin-top: 0.5em;
+  }
+  section.hero div.hero-text button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  section.hero div.hero-text hr {
+    display: none;
+  }
+  section.hero div.image-wrapper {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
