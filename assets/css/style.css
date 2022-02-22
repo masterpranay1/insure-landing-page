@@ -313,7 +313,7 @@ header nav button:hover {
 }
 
 nav.mobile {
-  z-index: 10;
+  z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,6 +620,92 @@ section.features .cards-wrapper .card p {
         -ms-flex-align: center;
             align-items: center;
     max-width: 18em;
+  }
+}
+
+section.howWeWork {
+  width: 100%;
+  margin: 2em 0;
+  padding: 2em 8em;
+}
+
+section.howWeWork .wrapper {
+  width: 100%;
+  background: var(--clr-pri-1);
+  color: var(--clr-white);
+  padding: 4em 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.howWeWork h2 {
+  font-size: calc(var(--fs-xl) + 0.9em);
+  font-family: var(--ff-heading);
+  font-weight: 400;
+  width: 45%;
+  line-height: 1;
+}
+
+section.howWeWork button {
+  outline: none;
+  border: 2px solid white;
+  background: var(--clr-pri-1);
+  padding: 0.6em 1.2em;
+  font-size: var(--fs-s);
+  text-transform: uppercase;
+  color: var(--clr-white);
+  margin-left: auto;
+}
+
+section.howWeWork button:hover {
+  background: var(--clr-white);
+  color: var(--clr-pri-1);
+  cursor: pointer;
+}
+
+@media (max-width: 63.9375em) {
+  section.howWeWork {
+    padding: 2em 6em;
+  }
+  section.howWeWork h2 {
+    font-size: calc(var(--fs-xl) + 0.5em);
+    width: 60%;
+  }
+  section.howWeWork button {
+    font-size: var(--fs-xs);
+  }
+}
+
+@media (max-width: 47.9375em) {
+  section.howWeWork {
+    padding: 2em 4em;
+    text-align: center;
+  }
+  section.howWeWork .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3em;
+  }
+  section.howWeWork h2 {
+    font-size: calc(var(--fs-xl));
+    width: 100%;
+  }
+  section.howWeWork button {
+    margin-left: 0;
+    margin-top: 3em;
   }
 }
 /*# sourceMappingURL=style.css.map */

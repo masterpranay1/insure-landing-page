@@ -1,0 +1,72 @@
+section.howWeWork {
+  width: 100%;
+  margin: 2em 0;
+  padding: 2em 8em;
+
+  .wrapper {
+    width: 100%;
+    background: var(--clr-pri-1);
+    color: var(--clr-white);
+
+    padding: 4em 4em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: calc(var(--fs-xl) + 0.9em);
+    font-family: var(--ff-heading);
+    font-weight: 400;
+
+    width: 45%;
+    line-height: 1;
+  }
+
+  button {
+    outline: none;
+    border: 2px solid white;
+
+    background: var(--clr-pri-1);
+    padding: 0.6em 1.2em;
+
+    font-size: var(--fs-s);
+    text-transform: uppercase;
+    color: var(--clr-white);
+
+    margin-left: auto;
+    &:hover {
+      background: var(--clr-white);
+      color: var(--clr-pri-1);
+      cursor: pointer;
+    }
+  }
+
+  @include breakpoint-down(desktop) {
+    padding: 2em 6em;
+    h2 {
+      font-size: calc(var(--fs-xl) + 0.5em);
+      width: 60%;
+    }
+    button {
+      font-size: var(--fs-xs);
+    }
+  }
+  @include breakpoint-down(tablet) {
+    padding: 2em 4em;
+    text-align: center;
+    .wrapper {
+      flex-direction: column;
+      padding: 3em;
+    }
+    h2 {
+      font-size: calc(var(--fs-xl));
+      width: 100%;
+    }
+    button {
+        margin-left: 0;
+        margin-top: 3em;
+    }
+  }
+}
