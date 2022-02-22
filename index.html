@@ -10,6 +10,7 @@
 <body class="ff-body">
 
     <!-- Header and navigation -->
+
     <header class="flex">
         <h1 class="ff-heading fw-400 fs-xl">Insure</h1>
         <nav class="desktop">
@@ -23,6 +24,9 @@
         <img src="./assets/images/icon-hamburger.svg" alt="icon-hamburger" id="hamburger" class="hamburger">
         <img src="./assets/images/icon-close.svg" alt="icon-close" id="icon-close" class="hide icon-close">
     </header>
+
+    <!-- Mobile Navigation -->
+
     <nav class="mobile hide" id="mobile-nav">
         <ul>
             <li>how we work</li>
@@ -31,6 +35,9 @@
         </ul>
         <button>View Plans</button>
     </nav>
+
+    <!-- hero section -->
+
     <section class="hero flex">
         <div class="hero-text">
             <hr/>
@@ -42,6 +49,41 @@
             <img src="./assets/images/image-intro-desktop.jpg" alt="image-intro-desktop">
         </div>
     </section>
+
+    <!-- Features section -> similar to cards pattern  -->
+
+    <section class="features">
+        <hr />
+        <h2 class="heading">We're different</h2>
+
+        <!-- Cards Component Wrapper  -->
+
+        <div class="cards-wrapper">
+
+            <!-- card-1 -->
+            <div class="card">
+                <div class="image"><img src="./assets/images/icon-snappy-process.svg" alt="icon-snappy-process"></div>
+                <h3 class="title">Snappy Process</h3>
+                <p class="text">Our application process can be completed in minutes, not hours. Don't get stuck filling in tedius forms.</p>
+            </div>
+
+            <!-- card-2 -->
+            <div class="card">
+                <div class="image"><img src="./assets/images/icon-affordable-prices.svg" alt="icon-affordable-prices"></div>
+                <h3 class="title">Affordable Prices</h3>
+                <p class="text">We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage.</p>
+            </div>
+
+            <!-- card-3 -->
+            <div class="card">
+                <div class="image"><img src="./assets/images/icon-people-first.svg" alt="icon-affordable-prices"></div>
+                <h3 class="title">People first</h3>
+                <p class="text">Our plans aren't full of conditions and clauses to prevent payouts. We make sure you've covered when you need it.</p>
+            </div>
+        </div>
+    </section>
+
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
